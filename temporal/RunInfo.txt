@@ -1,0 +1,80 @@
+########################################################
+#                 exomePeak2 Run Info                  #
+########################################################
+
+bam_ip = "human_young_FrontalCortex_1.m6A.bam" "human_young_FrontalCortex_2.m6A.bam"
+bam_input = c("\"human_young_FrontalCortex_1.input.bam\"", "[2] \"human_young_FrontalCortex_2.input.bam\"")
+bam_treated_ip = "human_old_FrontalCortex_1.m6A.bam" "human_old_FrontalCortex_2.m6A.bam"
+bam_treated_input = "human_old_FrontalCortex_1.input.bam" "human_old_FrontalCortex_2.input.bam"
+genome = "hg38"
+gff_dir = "gencode.v31.annotation.gtf.gz"
+mod_annot = NULL
+paired_end = FALSE
+library_type = "unstranded"
+fragment_length = 100
+binding_length = 25
+step_length = 25
+min_peak_width = 50
+max_peak_width = 10000
+pc_count_cutoff = 5
+bg_count_cutoff = 50
+p_cutoff = 1e-05
+p_adj_cutoff = NULL
+log2FC_cutoff = 0
+parallel = 32
+background_method = "all"
+manual_background = NULL
+correct_GC_bg = TRUE
+qtnorm = FALSE
+glm_type = "DESeq2"
+LFC_shrinkage = "apeglm"
+export_results = TRUE
+export_format = "CSV"
+table_style = "bed"
+save_plot_GC = TRUE
+save_plot_analysis = FALSE
+save_plot_name = ""
+save_dir = "exomePeak2_output"
+peak_calling_mode = "exon"
+
+########################################################
+#              Transcript Annotation Info:             #
+########################################################
+
+# Db type: TxDb
+# Supporting package: GenomicFeatures
+# Data source: gencode.v31.annotation.gtf.gz
+# Organism: NA
+# Taxonomy ID: NA
+# miRBase build ID: NA
+# Genome: NA
+# Nb of transcripts: 226882
+# Db created by: GenomicFeatures package from Bioconductor
+# Creation time: 2021-11-16 06:03:17 +0000 (Tue, 16 Nov 2021)
+# GenomicFeatures version at creation time: 1.46.1
+# RSQLite version at creation time: 2.2.8
+# DBSCHEMAVERSION: 1.2
+
+########################################################
+#                Genome Reference Info:                #
+########################################################
+
+# organism: Homo sapiens (Human)
+# genome: hg38
+# provider: UCSC
+# release date: Feb 2019
+# 640 sequences:
+#   chr1                    chr2                    chr3                   
+#   chr4                    chr5                    chr6                   
+#   chr7                    chr8                    chr9                   
+#   chr10                   chr11                   chr12                  
+#   chr13                   chr14                   chr15                  
+#   ...                     ...                     ...                    
+#   chr19_KV575254v1_alt    chr19_KV575255v1_alt    chr19_KV575256v1_alt   
+#   chr19_KV575257v1_alt    chr19_KV575258v1_alt    chr19_KV575259v1_alt   
+#   chr19_KV575260v1_alt    chr22_KN196485v1_alt    chr22_KN196486v1_alt   
+#   chr22_KQ458387v1_alt    chr22_KQ458388v1_alt    chr22_KQ759761v1_alt   
+#   chrX_KV766199v1_alt                                                    
+
+--------------------------------------------------------
+exomePeak2 Version: 1.6.0
